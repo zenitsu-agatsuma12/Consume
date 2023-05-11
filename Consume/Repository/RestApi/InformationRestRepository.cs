@@ -57,7 +57,7 @@ namespace Consume.Repository.RestApi
 
         public Information GetInformationById(int id)
         {
-            var response = httpClient.GetAsync(baseURL + "/todos/" + id).Result;
+            var response = httpClient.GetAsync(baseURL + "/todos/" + id ).Result;
             if (response.IsSuccessStatusCode)
             {
                 var data = response.Content.ReadAsStringAsync().Result;

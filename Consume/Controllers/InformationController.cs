@@ -36,6 +36,7 @@ namespace Consume.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Details(int id)
         {
             var info = _repo.GetInformationById(id);
